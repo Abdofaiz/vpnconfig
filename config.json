@@ -1,1 +1,71 @@
 
+{
+  "Version": "1.0",
+  "Servers": [
+    {
+      "Name": "SWQ069 Server",
+      "FLAG": "id",
+      "sInfo": "Multi Protocol Server",
+      "ServerIP": "51.159.36.119",
+      "ProxyIP": "51.159.36.119",
+      "ProxyPort": "2086",
+      "XUser": "vpnbee",
+      "XPass": "vpnbee",
+      "servermessage": "SWQ069 Server - Multi Protocol",
+      "SSLPort": "443",
+      "ServerPort": "22"
+    }
+  ],
+  "Networks": [
+    {
+      "Name": "SSH Direct",
+      "pInfo": "Direct SSH Connection",
+      "isSSL": false,
+      "isPayloadSSL": false,
+      "isSSLRp": false,
+      "isSlow": false,
+      "isDirect": true,
+      "SNI": "swq069.scxwill.web.id"
+    },
+    {
+      "Name": "SSH SSL",
+      "pInfo": "SSH with SSL",
+      "isSSL": true,
+      "isPayloadSSL": false,
+      "isSSLRp": false,
+      "isSlow": false,
+      "isDirect": false,
+      "SNI": "swq069.scxwill.web.id"
+    },
+    {
+      "Name": "SSH WS",
+      "pInfo": "SSH WebSocket",
+      "isSSL": false,
+      "isPayloadSSL": true,
+      "isSSLRp": false,
+      "isSlow": false,
+      "isDirect": false,
+      "SNI": "swq069.scxwill.web.id"
+    },
+    {
+      "Name": "SSH WS Enhanced",
+      "pInfo": "Enhanced WebSocket",
+      "isSSL": false,
+      "isPayloadSSL": true,
+      "isSSLRp": false,
+      "isSlow": false,
+      "isDirect": false,
+      "SNI": "swq069.scxwill.web.id"
+    },
+    {
+      "Name": "SlowDNS",
+      "pInfo": "SlowDNS Connection",
+      "isSSL": false,
+      "isPayloadSSL": false,
+      "isSSLRp": false,
+      "isSlow": true,
+      "isDirect": false,
+      "SNI": "dns.swq069.scxwill.web.id"
+    }
+  ]
+}
